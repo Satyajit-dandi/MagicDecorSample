@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.slider,
+.products-list {
+    margin: 0 20px;
+}
+
+.slider-title {
+    text-align: center;
+    margin: 40px 10px;
+}
+
+.products {
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.product-images {
+    width: 200px;
+}
+
+.product {
+    cursor: pointer;
+    /* margin:20px auto; */
+    margin: 20px 32px;
+    padding: 20px;
+    box-shadow: 0 0 10px #999;
+}
+
+.containers img {
+    width: 100%;
+    height: 100vh;
+}
+
+.details,
+.email,
+.phone,
+.location {
+    display: flex;
+    background-color: #F6F1ED;
+}
+
+.email,
+.phone,
+.location {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email p,
+.phone p,
+.location p {
+    margin: 0 !important;
+    padding: 10px;
+}
+
+.logo,
+.locationncontact {
+    padding: 20px;
+    width: 50%;
+}
+
+.locationncontact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.copyright {
+    padding: 10px;
+    background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.section-1,
+.section-2,
+.copyright {
+    display: flex;
+    align-items: center;
+}
+
+.section-1 {
+    justify-content: center;
+}
+
+.section-1 p {
+    padding: 5px;
+}
+
+.section-2,
+.copyright {
+    justify-content: space-evenly
+}
+
+.section-1,
+.section-2 {
+    width: 50%;
+}
+
+.product:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* box-shadow: 5px 5px 8px 5px #888888; */
+
+@media (min-width: 340px) and (max-width:900px) {
+    .products {
+        display: flex !important;
+        flex-wrap: wrap !important;
+    }
+
+    .product {
+        margin: 20px 15px !important;
+    }
+
+    .details {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo,
+    .locationncontact {
+        width: unset;
+    }
+
+    .section-1 {
+        width: unset;
+        font-size: 13px;
+    }
+
+    .copyright{
+        flex-wrap: wrap;
+    }
+
+}
